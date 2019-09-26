@@ -20,12 +20,15 @@ package leetcode.study;
  */
 public class Solution20190926 {
     public boolean isPalindrome(String s) {
-        //判断
+        //边界条件判断
         if(s == null){
             return false;
         }
 
+        //将不是数字、字母的字符过滤掉， 同时大写字母转小写字母
         s = s.replaceAll("[^0-9a-zA-Z]","").toLowerCase();
+
+        //分别取出第一个字符和最后一个字符作比较，通过charAt()方法
         for(int i = 0, j = s.length() - 1; i < j; i++, j-- ){
             if(s.charAt(i) != (s.charAt(j))){
                 return false;
