@@ -26,7 +26,7 @@ public class LeetCode14 {
             return "";
         }
 
-        //找出长度最短的字符串
+        //找出长度最短的字符串, 获取字符串长度: .length()
         int minLength = strs[0].length();
         for(String str:strs){
             if(minLength > str.length()){
