@@ -25,7 +25,6 @@ public class LeetCode125 {
         if(s == null){
             return false;
         }
-
         //将不是数字、字母的字符过滤掉， 同时大写字母转小写字母
         s = s.replaceAll("[^0-9a-zA-Z]","").toLowerCase();
 
